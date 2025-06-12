@@ -1,0 +1,46 @@
+// HTML para interfaz web (declarado pero omitido aquí)
+const char* htmlPage = R"rawliteral(
+<!-- Contenido HTML omitido --…
+appweb                                                                                                                                                                                                            // HTML para interfaz web
+const char* htmlPage = R"rawliteral(
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control de 4 Servos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body { font-family: Arial; text-align: center; padding-top: 20px; }
+      input { width: 300px; }
+    </style>
+  </head>
+  <body>
+    <h2>Control de 4 Servos</h2>
+    <div>
+      <p>Servo 1: <span id="val1">90</span>°</p>
+      <input type="range" min="0" max="180" value="90" id="slider1">
+      <p>Servo 2 (Inverso): <span id="val2">90</span>°</p>
+      <input type="range" min="0" max="180" value="90" id="slider2">
+      <p>Servo 3: <span id="val3">90</span>°</p>
+      <input type="range" min="0" max="180" value="90" id="slider3">
+      <p>Servo 4 (0-90°): <span id="val4">45</span>°</p>
+      <input type="range" min="0" max="90" value="45" id="slider4">
+    </div>
+
+    <script>
+      function setupSlider(id, valId, servoNum) {
+        const slider = document.getElementById(id);
+        const val = document.getElementById(valId);
+        slider.oninput = () => {
+          val.textContent = slider.value;
+          fetch(/servo?num=${servoNum}&angle=${slider.value});
+        };
+      }
+
+      setupSlider("slider1", "val1", 1);
+      setupSlider("slider2", "val2", 2);
+      setupSlider("slider3", "val3", 3);
+      setupSlider("slider4", "val4", 4);
+    </script>
+  </body>
+</html>
+)rawliteral";
