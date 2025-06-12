@@ -3,7 +3,7 @@
 
 const char* ssid = "RWR";        // ← Cambiá por el nombre de tu red Wi-Fi
 const char* password = "12345678"; // ← Cambiá por tu contraseña
-
+ 
 const int ledPin = 2; // LED en GPIO 2
 WebServer server(80);
 

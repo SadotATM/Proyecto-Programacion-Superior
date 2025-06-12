@@ -10,7 +10,7 @@ const int SERVO2_PIN = 14;
 const int SERVO3_PIN = 27;
 const int SERVO4_PIN =  26; // GARRA
 
-// Pin del pulsador (garra)
+// Pin del pulsador (garra
 const int BUTTON_PIN = 33; // Ajusta según el pin que uses
 
 // Servos

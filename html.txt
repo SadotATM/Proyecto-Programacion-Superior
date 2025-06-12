@@ -3,7 +3,7 @@ const char* htmlPage = R"rawliteral(
 <!-- Contenido HTML omitido --…
 appweb                                                                                                                                                                                                            // HTML para interfaz web
 const char* htmlPage = R"rawliteral(
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
   <head>
     <title>Control de 4 Servos</title>
