@@ -8,7 +8,7 @@ const char* password = "12345678";
 const int SERVO1_PIN = 12;
 const int SERVO2_PIN = 14;
 const int SERVO3_PIN = 27;
-const int SERVO4_PIN = 26; // GARRA
+const int SERVO4_PIN =  26; // GARRA
 
 // Pin del pulsador (garra)
 const int BUTTON_PIN = 33; // Ajusta según el pin que uses
@@ -44,7 +44,7 @@ const char* htmlPage = R"rawliteral(
     }
     .contenedor-deslizante {
       margin: 10px auto;
-      max-width: 95%;
+      max-width: 95%; 
       background: white;
       padding: 12px 15px;
       border-radius: 10px;
