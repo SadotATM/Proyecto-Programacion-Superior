@@ -15,7 +15,7 @@ extern const int SERVO2_PIN;
 extern const int SERVO3_PIN;
 extern const int SERVO4_PIN; // GARRA
 
-// Pin del pulsador (garra)
+// Pin del pulsador (garra
 extern const int BUTTON_PIN;
 
 // Servos
